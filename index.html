@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- My Style -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand"
+            ><img src="assets/images/logo.png" alt="logo"
+          /></a>
+          <div class="right-content-nav">
+            <div class="coin-user">
+              <img src="assets/images/coin.png" alt="coin" />
+              <p>200</p>
+            </div>
+
+            <div class="border-button">
+              <a href="#" class="btn btn-small">Withdraw</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Top Chart -->
+      <section id="top-chart">
+        <div class="swiper content-swiper-top-chart top-chart-swipper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div
+                class="card-top-chart"
+                style="
+                  background: url(assets/images/game1.jpg);
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div class="card-detail">
+                  <div class="title">Hoop Star HD</div>
+                  <div class="rating-play">
+                    <div class="rating">
+                      <img src="assets/images/star.png" alt="star" />
+                      <p>8.4</p>
+                    </div>
+                    <div class="border-button">
+                      <a href="#" class="btn btn-small">Play</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="card-top-chart"
+                style="
+                  background: url(assets/images/game2.jpg);
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div class="card-detail">
+                  <div class="title">Kart Racing Pro</div>
+                  <div class="rating-play">
+                    <div class="rating">
+                      <img src="assets/images/star.png" alt="star" />
+                      <p>8.4</p>
+                    </div>
+                    <div class="border-button">
+                      <a href="#" class="btn btn-small">Play</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="card-top-chart"
+                style="
+                  background: url(assets/images/game3.jpg);
+                  background-size: cover;
+                  background-position: center;
+                "
+              >
+                <div class="card-detail">
+                  <div class="title">OMG Zombie Run</div>
+                  <div class="rating-play">
+                    <div class="rating">
+                      <img src="assets/images/star.png" alt="star" />
+                      <p>8.4</p>
+                    </div>
+                    <div class="border-button">
+                      <a href="#" class="btn btn-small">Play</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="swiper-pagination"></div> -->
+        </div>
+      </section>
+
+      <section id="tournament">
+        <h3 class="title mt-3">Tournament</h3>
+
+        <div class="swiper tournament-swipper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card-tournament">
+                <img
+                  src="assets/images/game1.jpg"
+                  alt="thumbnail-tournament"
+                  class="thumbnail-tournament"
+                />
+                <div class="detail-tournament">
+                  <p class="title">Hoop Star HD</p>
+                  <div class="time">
+                    <img src="assets/images/clock.svg" alt="clock" />
+                    <p>02:13:40</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-tournament">
+                <img
+                  src="assets/images/game2.jpg"
+                  alt="thumbnail-tournament"
+                  class="thumbnail-tournament"
+                />
+                <div class="detail-tournament">
+                  <p class="title">Kart Racing Pro</p>
+                  <div class="time">
+                    <img src="assets/images/clock.svg" alt="clock" />
+                    <p>02:13:40</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card-tournament">
+                <img
+                  src="assets/images/game3.jpg"
+                  alt="thumbnail-tournament"
+                  class="thumbnail-tournament"
+                />
+                <div class="detail-tournament">
+                  <p class="title">OMG Zombie Run</p>
+                  <div class="time">
+                    <img src="assets/images/clock.svg" alt="clock" />
+                    <p>02:13:40</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- all games -->
+      <section id="all-games">
+        <h3 class="title mt-4">All Games</h3>
+
+        <div
+          class="swiper content-swiper-game game-swipper"
+          style="padding-top: 21px; margin-top: -18px"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a
+                class="filter-game active"
+                style="
+                  background: linear-gradient(
+                    110deg,
+                    #532fb1 12.07%,
+                    #0097c1 76.58%
+                  );
+                "
+              >
+                <p class="title">New Game</p>
+                <img
+                  src="assets/images/filter-new-game.png"
+                  alt="new game"
+                  class="icon-filter"
+                />
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a
+                class="filter-game"
+                style="
+                  background: linear-gradient(
+                    110deg,
+                    #af0930 12.07%,
+                    #ff004a 76.58%
+                  );
+                "
+              >
+                <p class="title">Racing</p>
+                <img
+                  src="assets/images/filter-racing.png"
+                  alt="new game"
+                  class="icon-filter"
+                />
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a
+                class="filter-game"
+                style="
+                  background: linear-gradient(
+                    110deg,
+                    #007e65 12.07%,
+                    #00b6a2 76.58%
+                  );
+                "
+              >
+                <p class="title">Puzzle</p>
+                <img
+                  src="assets/images/filter-puzzle.png"
+                  alt="new game"
+                  class="icon-filter"
+                />
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a
+                class="filter-game"
+                style="
+                  background: linear-gradient(
+                    110deg,
+                    #850db3 12.07%,
+                    #bb40e9 76.58%
+                  );
+                "
+              >
+                <p class="title">Shooting</p>
+                <img
+                  src="assets/images/filter-shooting.png"
+                  alt="new game"
+                  class="icon-filter"
+                />
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a
+                class="filter-game"
+                style="
+                  background: linear-gradient(
+                    110deg,
+                    #ea5553 12.07%,
+                    #ff8a00 76.58%
+                  );
+                "
+              >
+                <p class="title">Strategy</p>
+                <img
+                  src="assets/images/filter-strategy.png"
+                  alt="new game"
+                  class="icon-filter"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row row-cols-2">
+          <div class="col">
+            <div class="card-game">
+              <img
+                src="assets/images/game1.jpg"
+                alt="thumb-game"
+                class="thumb-game"
+              />
+              <div class="detail-game">
+                <p class="title">Hoop Star HD</p>
+                <div class="users-play">
+                  <div class="users">
+                    <img src="assets/images/users.png" alt="users" />
+                    <p>1.2k</p>
+                  </div>
+                  <div class="border-button">
+                    <a href="#" class="btn btn-small">Play</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-game">
+              <img
+                src="assets/images/game2.jpg"
+                alt="thumb-game"
+                class="thumb-game"
+              />
+              <div class="detail-game">
+                <p class="title">Kart Racing Pro</p>
+                <div class="users-play">
+                  <div class="users">
+                    <img src="assets/images/users.png" alt="users" />
+                    <p>1.2k</p>
+                  </div>
+                  <div class="border-button">
+                    <a href="#" class="btn btn-small">Play</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-game">
+              <img
+                src="assets/images/game3.jpg"
+                alt="thumb-game"
+                class="thumb-game"
+              />
+              <div class="detail-game">
+                <p class="title">OMG Zombie Run</p>
+                <div class="users-play">
+                  <div class="users">
+                    <img src="assets/images/users.png" alt="users" />
+                    <p>1.2k</p>
+                  </div>
+                  <div class="border-button">
+                    <a href="#" class="btn btn-small">Play</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-game">
+              <img
+                src="assets/images/game4.jpg"
+                alt="thumb-game"
+                class="thumb-game"
+              />
+              <div class="detail-game">
+                <p class="title">Temple Dash Mania</p>
+                <div class="users-play">
+                  <div class="users">
+                    <img src="assets/images/users.png" alt="users" />
+                    <p>1.2k</p>
+                  </div>
+                  <div class="border-button">
+                    <a href="#" class="btn btn-small">Play</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-game">
+              <img
+                src="assets/images/game5.jpg"
+                alt="thumb-game"
+                class="thumb-game"
+              />
+              <div class="detail-game">
+                <p class="title">Super Jump</p>
+                <div class="users-play">
+                  <div class="users">
+                    <img src="assets/images/users.png" alt="users" />
+                    <p>1.2k</p>
+                  </div>
+                  <div class="border-button">
+                    <a href="#" class="btn btn-small">Play</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card-game">
+              <img
+                src="assets/images/game6.jpg"
+                alt="thumb-game"
+                class="thumb-game"
+              />
+              <div class="detail-game">
+                <p class="title">Space shooter</p>
+                <div class="users-play">
+                  <div class="users">
+                    <img src="assets/images/users.png" alt="users" />
+                    <p>1.2k</p>
+                  </div>
+                  <div class="border-button">
+                    <a href="#" class="btn btn-small">Play</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".top-chart-swipper", {
+        slidesPerView: "auto",
+        // centeredSlides: true,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <script>
+      var swiper_tournament = new Swiper(".tournament-swipper", {
+        slidesPerView: "auto",
+        // centeredSlides: true,
+        spaceBetween: 20,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+
+    <script>
+      var swiper_game = new Swiper(".game-swipper", {
+        slidesPerView: "auto",
+        // centeredSlides: true,
+        spaceBetween: 28,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+  </body>
+</html>
